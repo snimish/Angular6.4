@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h2>
+    <app-child [title]="title"></app-child>
+  </h2>
+</div>
+<section id="main">
+  <div class="container">
+    <input class="form-control" type="text" [(ngModel)]="firstName" #fname>
+    <input class="form-control" type="text" [(ngModel)]="lastName" #lname>
+    <button class="btn btn-primary btn-block" (click)="updateTitle(fname.value, lname.value)">Submit</button>
+  </div>
+</section>
+
